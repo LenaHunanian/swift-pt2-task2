@@ -1,6 +1,6 @@
 class Person {
-    var name: String
-    var age: Int
+    let name: String
+    let age: Int
     
     init(name: String, age: Int) {
         self.name = name
@@ -16,8 +16,8 @@ class Person {
 }
 
 class Student: Person {
-    var studentID: String
-    var major: String
+    let studentID: String
+    let major: String
     
     required init(name: String, age: Int, studentID: String, major: String) {
         self.studentID = studentID
@@ -29,7 +29,7 @@ class Student: Person {
     }
 }
 class Professor: Person {
-    var faculty: String
+    let faculty: String
    
     init(name: String, age: Int, faculty: String) {
         self.faculty = faculty
@@ -37,6 +37,6 @@ class Professor: Person {
     }
 }
 struct University {
-    var name: String
-    var location: String
+    let name: String
+    let location: String
 }
